@@ -1,0 +1,134 @@
+  
+  body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+  }
+  
+  .card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+    transition: all 0.3s ease;
+  }
+  
+  .category {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .title {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }  
+  
+  .price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .current-price {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+  }
+  
+  
+  .cart {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .cart:hover {
+    background-color: hsl(158, 42%, 18%);
+  }
+  
+  .cart:focus {
+    outline: 3px solid hsl(158, 36%, 60%);
+    outline-offset: 3px;
+  }
+  
+  .cart-icon {
+    font-size: 1.2rem;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  footer a {
+    color: darkblue; 
+    text-decoration: none; 
+  }
+ 
+  
+  @media (min-width: 768px) {
+    .card {
+      flex-direction: row;
+      max-width: 600px;
+    }
+  }
+
+  .card-image img {
+    content: url('images/image-product-mobile.jpg');
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  
